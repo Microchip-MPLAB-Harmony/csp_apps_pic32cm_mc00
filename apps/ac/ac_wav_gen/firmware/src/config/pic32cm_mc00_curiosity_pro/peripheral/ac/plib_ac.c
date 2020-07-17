@@ -43,6 +43,7 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 // DOM-IGNORE-END
+#include "device.h"
 #include "plib_ac.h"
 
 

@@ -48,7 +48,6 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <stddef.h>
-#include "pic32cm1216mc00048.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -95,5 +94,9 @@ bool AC_StatusGet (AC_CHANNEL channel);
 void AC_CallbackRegister (AC_CALLBACK callback, uintptr_t context);
 
 void AC_SetVddScalar( AC_CHANNEL channel_id , uint8_t vdd_scalar);
+
+#ifdef __cplusplus // Provide C++ Compatibility
+}
+#endif
 
 #endif /* PLIB_AC_H */
