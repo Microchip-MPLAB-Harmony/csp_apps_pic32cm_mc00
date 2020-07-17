@@ -245,6 +245,12 @@ typedef enum
     /* PB11 pin */
     PORT_PIN_PB11 = 43,
 
+    /* PB22 pin */
+    PORT_PIN_PB22 = 54,
+
+    /* PB23 pin */
+    PORT_PIN_PB23 = 55,
+
     /* This element should not be used in any of the PORT APIs.
      * It will be used by other modules or application to denote that none of
      * the PORT Pin is used */
