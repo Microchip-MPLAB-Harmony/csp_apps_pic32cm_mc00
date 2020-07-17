@@ -123,6 +123,8 @@ void CLOCK_Initialize (void)
         /* Wait for synchronization */
     }
 
+
+
     /* Configure the APBC Bridge Clocks */
     MCLK_REGS->MCLK_APBCMASK = 0x280002;
 

@@ -13,8 +13,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/</LogicalPath>
           <PhysicalPath dnOrder="4">/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">9DE4051D799EAFEBF2B648E71E7FCDAA</GeneratedChecksum>
-          <UserChecksum dnOrder="6">9DE4051D799EAFEBF2B648E71E7FCDAA</UserChecksum>
+          <GeneratedChecksum dnOrder="5">9762B12622FD08815784244AF2080753</GeneratedChecksum>
+          <UserChecksum dnOrder="6">9762B12622FD08815784244AF2080753</UserChecksum>
         </File>
         <File dnOrder="1">
           <Type dnOrder="0">SOURCE</Type>
@@ -22,8 +22,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/</LogicalPath>
           <PhysicalPath dnOrder="4">/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">729895A3C5C8F9C492B67651D79F12EE</GeneratedChecksum>
-          <UserChecksum dnOrder="6">729895A3C5C8F9C492B67651D79F12EE</UserChecksum>
+          <GeneratedChecksum dnOrder="5">B7F3E8EC62BB7A08C6287C7D6496E2AC</GeneratedChecksum>
+          <UserChecksum dnOrder="6">B7F3E8EC62BB7A08C6287C7D6496E2AC</UserChecksum>
         </File>
         <File dnOrder="2">
           <Type dnOrder="0">SOURCE</Type>
@@ -31,8 +31,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/</LogicalPath>
           <PhysicalPath dnOrder="4">/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">C71BCD91087EA4128A60D22B6B55346C</GeneratedChecksum>
-          <UserChecksum dnOrder="6">C71BCD91087EA4128A60D22B6B55346C</UserChecksum>
+          <GeneratedChecksum dnOrder="5">3729809F1EDF7DF83E4D615A3FB2EEC7</GeneratedChecksum>
+          <UserChecksum dnOrder="6">3729809F1EDF7DF83E4D615A3FB2EEC7</UserChecksum>
         </File>
         <File dnOrder="3">
           <Type dnOrder="0">SOURCE</Type>
@@ -49,8 +49,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3"/>
           <PhysicalPath dnOrder="4">/../../</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">F81A00E640818EDFB9E79C9BD241AEF4</GeneratedChecksum>
-          <UserChecksum dnOrder="6">F81A00E640818EDFB9E79C9BD241AEF4</UserChecksum>
+          <GeneratedChecksum dnOrder="5"/>
+          <UserChecksum dnOrder="6"/>
         </File>
         <File dnOrder="5">
           <Type dnOrder="0">SOURCE</Type>
@@ -121,8 +121,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/peripheral/sdadc/</LogicalPath>
           <PhysicalPath dnOrder="4">/peripheral/sdadc/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">A6EA7673004B5FAE21AC785B3507EDFE</GeneratedChecksum>
-          <UserChecksum dnOrder="6">A6EA7673004B5FAE21AC785B3507EDFE</UserChecksum>
+          <GeneratedChecksum dnOrder="5">494074E9D86CE9F6C17CC7C64EBD339D</GeneratedChecksum>
+          <UserChecksum dnOrder="6">494074E9D86CE9F6C17CC7C64EBD339D</UserChecksum>
         </File>
         <File dnOrder="13">
           <Type dnOrder="0">SOURCE</Type>
@@ -157,8 +157,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/</LogicalPath>
           <PhysicalPath dnOrder="4">/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">1D663AF01040F617CC298F9373DE9B57</GeneratedChecksum>
-          <UserChecksum dnOrder="6">1D663AF01040F617CC298F9373DE9B57</UserChecksum>
+          <GeneratedChecksum dnOrder="5">7D8A70818A121F4892AC7968EC32BE8B</GeneratedChecksum>
+          <UserChecksum dnOrder="6">7D8A70818A121F4892AC7968EC32BE8B</UserChecksum>
         </File>
         <File dnOrder="17">
           <Type dnOrder="0">SOURCE</Type>
@@ -166,8 +166,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/stdio/</LogicalPath>
           <PhysicalPath dnOrder="4">/stdio/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">4DA0DAD9652468DCEBB6E9A98942E128</GeneratedChecksum>
-          <UserChecksum dnOrder="6">4DA0DAD9652468DCEBB6E9A98942E128</UserChecksum>
+          <GeneratedChecksum dnOrder="5">DE7DBE3D2A8567761FAA7FBA04AB0047</GeneratedChecksum>
+          <UserChecksum dnOrder="6">DE7DBE3D2A8567761FAA7FBA04AB0047</UserChecksum>
         </File>
         <File dnOrder="18">
           <Type dnOrder="0">HEADER</Type>
@@ -292,8 +292,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">packs/PIC32CM1216MC00048_DFP/</LogicalPath>
           <PhysicalPath dnOrder="4">/../../packs/PIC32CM1216MC00048_DFP/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">2CF93C360D0B1BEE5EFCF5A8265561C0</GeneratedChecksum>
-          <UserChecksum dnOrder="6">2CF93C360D0B1BEE5EFCF5A8265561C0</UserChecksum>
+          <GeneratedChecksum dnOrder="5">42525D9ABA8BB83B277EA8689FCE5C9E</GeneratedChecksum>
+          <UserChecksum dnOrder="6">42525D9ABA8BB83B277EA8689FCE5C9E</UserChecksum>
         </File>
         <File dnOrder="32">
           <Type dnOrder="0">HEADER</Type>
@@ -490,8 +490,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/peripheral/eic/</LogicalPath>
           <PhysicalPath dnOrder="4">/peripheral/eic/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">B59597986454C4A70E9CEAF691466330</GeneratedChecksum>
-          <UserChecksum dnOrder="6">B59597986454C4A70E9CEAF691466330</UserChecksum>
+          <GeneratedChecksum dnOrder="5">972818AAE050E78C422A2FC09EC29868</GeneratedChecksum>
+          <UserChecksum dnOrder="6">972818AAE050E78C422A2FC09EC29868</UserChecksum>
         </File>
         <File dnOrder="54">
           <Type dnOrder="0">HEADER</Type>
@@ -526,8 +526,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/peripheral/port/</LogicalPath>
           <PhysicalPath dnOrder="4">/peripheral/port/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">F2C4D671A3909081AF1B39ED0C2D0C9B</GeneratedChecksum>
-          <UserChecksum dnOrder="6">F2C4D671A3909081AF1B39ED0C2D0C9B</UserChecksum>
+          <GeneratedChecksum dnOrder="5">B6A5CDC03F05CE16C81393AAAC7BF8A3</GeneratedChecksum>
+          <UserChecksum dnOrder="6">B6A5CDC03F05CE16C81393AAAC7BF8A3</UserChecksum>
         </File>
         <File dnOrder="58">
           <Type dnOrder="0">HEADER</Type>
@@ -535,8 +535,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/peripheral/sdadc/</LogicalPath>
           <PhysicalPath dnOrder="4">/peripheral/sdadc/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">2ED0507B65DC34F9F31D81DB0A12AAAA</GeneratedChecksum>
-          <UserChecksum dnOrder="6">2ED0507B65DC34F9F31D81DB0A12AAAA</UserChecksum>
+          <GeneratedChecksum dnOrder="5">620412DD5FA3B54BD0E93AB922A4988F</GeneratedChecksum>
+          <UserChecksum dnOrder="6">620412DD5FA3B54BD0E93AB922A4988F</UserChecksum>
         </File>
         <File dnOrder="59">
           <Type dnOrder="0">HEADER</Type>
@@ -670,8 +670,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/</LogicalPath>
           <PhysicalPath dnOrder="4">/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">5D5CDFD3AB0E678AACDD28A3276C8099</GeneratedChecksum>
-          <UserChecksum dnOrder="6">5D5CDFD3AB0E678AACDD28A3276C8099</UserChecksum>
+          <GeneratedChecksum dnOrder="5">FD782F4B49D945E2B7398BEEDF367BDC</GeneratedChecksum>
+          <UserChecksum dnOrder="6">FD782F4B49D945E2B7398BEEDF367BDC</UserChecksum>
         </File>
         <File dnOrder="74">
           <Type dnOrder="0">HEADER</Type>
