@@ -94,8 +94,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/peripheral/port/</LogicalPath>
           <PhysicalPath dnOrder="4">/peripheral/port/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">CE2102AD45E36512259D0C71B59EFA3C</GeneratedChecksum>
-          <UserChecksum dnOrder="6">CE2102AD45E36512259D0C71B59EFA3C</UserChecksum>
+          <GeneratedChecksum dnOrder="5">81224F8DF39091040C84E76903D3CD45</GeneratedChecksum>
+          <UserChecksum dnOrder="6">81224F8DF39091040C84E76903D3CD45</UserChecksum>
         </File>
         <File dnOrder="10">
           <Type dnOrder="0">SOURCE</Type>
@@ -103,8 +103,8 @@
           <Security dnOrder="2">NON_SECURE</Security>
           <LogicalPath dnOrder="3">config/pic32cm_mc00_curiosity_pro/peripheral/sercom/spi_master/</LogicalPath>
           <PhysicalPath dnOrder="4">/peripheral/sercom/spi_master/</PhysicalPath>
-          <GeneratedChecksum dnOrder="5">858CCA4B8E5775DD9ADB9BC26013FD67</GeneratedChecksum>
-          <UserChecksum dnOrder="6">858CCA4B8E5775DD9ADB9BC26013FD67</UserChecksum>
+          <GeneratedChecksum dnOrder="5">C70141AC7AA789338B947AFEB4AAEED0</GeneratedChecksum>
+          <UserChecksum dnOrder="6">C70141AC7AA789338B947AFEB4AAEED0</UserChecksum>
         </File>
         <File dnOrder="11">
           <Type dnOrder="0">SOURCE</Type>
@@ -602,11 +602,11 @@
     </Manifest>
     <Settings dnOrder="5">
       <Setting dnOrder="0" key="CMSISPath" value=".\dev_packs\arm\CMSIS\5.6.0"/>
-      <Setting dnOrder="1" key="DFPPath" value=".\dev_packs\Microchip\PIC32CM-MC_DFP\1.0.13\atdf\PIC32CM1216MC00048.atdf"/>
+      <Setting dnOrder="1" key="DFPPath" value=".\dev_packs\Microchip\PIC32CM-MC_DFP\1.0.15\atdf\PIC32CM1216MC00048.atdf"/>
       <Setting dnOrder="2" key="FORCE_OPTIMIZATION" value="false"/>
       <Setting dnOrder="3" key="GENERATE_BACKUP" value="true"/>
       <Setting dnOrder="4" key="MERGE_STRATEGY" value="USER_ALL"/>
-      <Setting dnOrder="5" key="PackageFilter" value="csp;"/>
+      <Setting dnOrder="5" key="PackageFilter" value="bootloader;bsp;core;crypto;cryptoauthlib;csp;gfx;micrium_ucos3;net;touch;usb;"/>
       <Setting dnOrder="6" key="TRUSTZONE" value="false"/>
     </Settings>
   </Configurator>
