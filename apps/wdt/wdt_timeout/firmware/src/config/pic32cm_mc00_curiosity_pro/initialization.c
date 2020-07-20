@@ -59,8 +59,8 @@
 #pragma config BODVDD_ACTION = NONE
 #pragma config WDT_ENABLE = DISABLED
 #pragma config WDT_ALWAYSON = ENABLED
-#pragma config WDT_PER = CYC8
-#pragma config WDT_WINDOW = CYC4096
+#pragma config WDT_PER = CYC4096
+#pragma config WDT_WINDOW = CYC8
 #pragma config WDT_EWOFFSET = CYC8
 #pragma config WDT_WEN = DISABLED
 #pragma config BODVDD_HYST = DISABLED
