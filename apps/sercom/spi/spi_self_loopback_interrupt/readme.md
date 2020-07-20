@@ -51,7 +51,8 @@ The following table shows the target hardware for the application projects.
     - The LED is turned OFF when the value received did not match with the transmitted value
 3. SPI data transfer and compare match checking happens only one time
 Following table provides the LED name:
+
 | Board      | LED Name |
-| ---------- | ---------------- |--------- |
+| ---------- | -------- |
 | [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) | LED0 |
 |||
