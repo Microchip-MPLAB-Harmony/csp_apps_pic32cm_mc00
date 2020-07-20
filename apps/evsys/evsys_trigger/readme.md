@@ -45,7 +45,7 @@ The following table shows the target hardware for the application projects.
 ## Running the Application
 
 1. Build and Program the application using its IDE
-2. LED toggles on every switch press
+2. LED toggles on every switch release
 
 Following table provides the LED and switch names:
 
