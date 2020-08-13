@@ -65,45 +65,41 @@
 // *****************************************************************************
 // *****************************************************************************
 
-  
 /*** Macros for EEPROM_WP pin ***/
 #define EEPROM_WP_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 10)
 #define EEPROM_WP_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 10)
 #define EEPROM_WP_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 10)
-#define EEPROM_WP_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 10)) & 0x01)
 #define EEPROM_WP_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 10)
 #define EEPROM_WP_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 10)
+#define EEPROM_WP_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 10)) & 0x01)
 #define EEPROM_WP_PIN                  PORT_PIN_PA10
 
 /*** Macros for EEPROM_CS pin ***/
 #define EEPROM_CS_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 15)
 #define EEPROM_CS_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 15)
 #define EEPROM_CS_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 15)
-#define EEPROM_CS_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 15)) & 0x01)
 #define EEPROM_CS_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 15)
 #define EEPROM_CS_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 15)
+#define EEPROM_CS_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 15)) & 0x01)
 #define EEPROM_CS_PIN                  PORT_PIN_PA15
 
 /*** Macros for LED pin ***/
 #define LED_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 24)
 #define LED_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 24)
 #define LED_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 24)
-#define LED_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 24)) & 0x01)
 #define LED_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 24)
 #define LED_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 24)
+#define LED_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 24)) & 0x01)
 #define LED_PIN                  PORT_PIN_PA24
 
 /*** Macros for EEPROM_HOLD pin ***/
 #define EEPROM_HOLD_Set()               (PORT_REGS->GROUP[1].PORT_OUTSET = 1 << 22)
 #define EEPROM_HOLD_Clear()             (PORT_REGS->GROUP[1].PORT_OUTCLR = 1 << 22)
 #define EEPROM_HOLD_Toggle()            (PORT_REGS->GROUP[1].PORT_OUTTGL = 1 << 22)
-#define EEPROM_HOLD_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 22)) & 0x01)
 #define EEPROM_HOLD_OutputEnable()      (PORT_REGS->GROUP[1].PORT_DIRSET = 1 << 22)
 #define EEPROM_HOLD_InputEnable()       (PORT_REGS->GROUP[1].PORT_DIRCLR = 1 << 22)
+#define EEPROM_HOLD_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 22)) & 0x01)
 #define EEPROM_HOLD_PIN                  PORT_PIN_PB22
-
-
-
 // *****************************************************************************
 /* PORT Group
 
@@ -871,7 +867,7 @@ void PORT_GroupToggle(PORT_GROUP group, uint32_t mask);
     void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as input.
+    Configures the selected IO pins of a group as input.
 
   Description:
     This function configures the selected IO pins of a group as input. The pins
@@ -910,7 +906,7 @@ void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask);
     void PORT_GroupOutputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as output.
+    Configures the selected IO pins of a group as output.
 
   Description:
     This function configures the selected IO pins of a group as output. The pins
