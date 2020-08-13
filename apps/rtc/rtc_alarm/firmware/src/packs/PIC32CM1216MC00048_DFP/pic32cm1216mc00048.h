@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2020-05-07T15:34:13Z */
+/* file generated from device description version 2020-08-03T13:06:09Z */
 #ifndef _PIC32CM1216MC00048_H_
 #define _PIC32CM1216MC00048_H_
 
@@ -30,12 +30,12 @@
 #define HEADER_FORMAT_VERSION_MAJOR (2)
 #define HEADER_FORMAT_VERSION_MINOR (0)
 
-/** \addtogroup PIC32CM1216MC00048_definitions PIC32CM1216MC00048 definitions
+/** \addtogroup PIC32CM1216MC00048_definitions b'PIC32CM1216MC00048 definitions
   This file defines all structures and symbols for PIC32CM1216MC00048:
     - registers and bitfields
     - peripheral base address
     - peripheral ID
-    - PIO definitions
+    - PIO definitions'
  *  @{
  */
 
@@ -65,7 +65,7 @@
 #  define _UL_(x) x   /**< Assembler: Unsigned Long integer literal constant value */
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 #endif /* SKIP_INTEGER_LITERALS */
-/** @}  end of Atmel Global Defines */
+/** @}  b'end of Atmel Global Defines' */
 
 /* ************************************************************************** */
 /*   CMSIS DEFINITIONS FOR PIC32CM1216MC00048                                 */
@@ -124,7 +124,7 @@ typedef struct _DeviceVectors
 {
   /* Stack pointer */
   void* pvStack;
-  /* Cortex-M handlers */
+  /* CORTEX-M0PLUS handlers */
   void* pfnReset_Handler;                        /* -15 Reset Vector, invoked on Power up and warm reset */
   void* pfnNonMaskableInt_Handler;               /* -14 Non maskable Interrupt, cannot be stopped or preempted */
   void* pfnHardFault_Handler;                    /* -13 Hard Fault, all classes of Fault */
@@ -171,12 +171,6 @@ typedef struct _DeviceVectors
   void* pfnPDEC_Handler;                         /*  26 Quadrature Decodeur (PDEC) */
 } DeviceVectors;
 
-/* Defines for Deprecated Interrupt and Exceptions handler names */
-#define pfnMemManage_Handler      pfnMemoryManagement_Handler     /**< \deprecated  Backward compatibility for ASF*/
-#define pfnDebugMon_Handler       pfnDebugMonitor_Handler         /**< \deprecated  Backward compatibility for ASF*/
-#define pfnNMI_Handler            pfnNonMaskableInt_Handler       /**< \deprecated  Backward compatibility for ASF*/
-#define pfnSVC_Handler            pfnSVCall_Handler               /**< \deprecated  Backward compatibility for ASF*/
-
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
@@ -220,17 +214,9 @@ void DAC_Handler                   ( void );
 void SDADC_Handler                 ( void );
 void PDEC_Handler                  ( void );
 #endif /* DONT_USE_PREDEFINED_PERIPHERALS_HANDLERS */
-/* Defines for Deprecated Interrupt and Exceptions handler names */
-#define MemManage_Handler         MemoryManagement_Handler        /**< \deprecated  Backward compatibility*/
-#define DebugMon_Handler          DebugMonitor_Handler            /**< \deprecated  Backward compatibility*/
-#define NMI_Handler               NonMaskableInt_Handler          /**< \deprecated  Backward compatibility*/
-#define SVC_Handler               SVCall_Handler                  /**< \deprecated  Backward compatibility*/
-
 #endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
 
-/*
- * \brief Configuration of the CORTEX-M0PLUS Processor and Core Peripherals
- */
+/** \brief Configuration of the CORTEX-M0PLUS Processor and Core Peripherals */
 #define __MPU_PRESENT                  1 /**< MPU present or not                                                        */
 #define __NVIC_PRIO_BITS               2 /**< Number of Bits used for Priority Levels                                   */
 #define __VTOR_PRESENT                 1 /**< Vector Table Offset Register present or not                               */
@@ -246,7 +232,7 @@ void PDEC_Handler                  ( void );
 #include "system_pic32cmmc00.h"
 #endif /* USE_CMSIS_INIT */
 
-/** \defgroup PIC32CM1216MC00048_api Peripheral Software API
+/** \defgroup PIC32CM1216MC00048_api b'Peripheral Software API'
  *  @{
  */
 
@@ -283,9 +269,9 @@ void PDEC_Handler                  ( void );
 #include "component/tcc.h"
 #include "component/tsens.h"
 #include "component/wdt.h"
-/** @}  end of Peripheral Software API */
+/** @}  b'end of Peripheral Software API' */
 
-/** \addtogroup PIC32CM1216MC00048_id Peripheral Ids Definitions
+/** \addtogroup PIC32CM1216MC00048_id b'Peripheral Ids Definitions'
  *  @{
  */
 
@@ -333,9 +319,9 @@ void PDEC_Handler                  ( void );
 #define ID_PDEC          ( 90) /**< \brief Instance index for PDEC (PDEC) */
 
 #define ID_PERIPH_MAX    ( 90) /**< \brief Number of peripheral IDs */
-/** @}  end of Peripheral Ids Definitions */
+/** @}  b'end of Peripheral Ids Definitions' */
 
-/** \addtogroup PIC32CM1216MC00048_base Peripheral Base Address Definitions
+/** \addtogroup PIC32CM1216MC00048_base b'Peripheral Base Address Definitions'
  *  @{
  */
 
@@ -385,9 +371,9 @@ void PDEC_Handler                  ( void );
 #define TSENS_REGS                       ((tsens_registers_t*)0x40003000)              /**< \brief TSENS Registers Address      */
 #define WDT_REGS                         ((wdt_registers_t*)0x40002000)                /**< \brief WDT Registers Address        */
 #endif /* (defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-/** @}  end of Peripheral Base Address Definitions */
+/** @}  b'end of Peripheral Base Address Definitions' */
 
-/** \addtogroup PIC32CM1216MC00048_base Peripheral Base Address Definitions
+/** \addtogroup PIC32CM1216MC00048_base b'Peripheral Base Address Definitions'
  *  @{
  */
 
@@ -435,9 +421,9 @@ void PDEC_Handler                  ( void );
 #define TCC2_BASE_ADDRESS                _UL_(0x42002c00)                              /**< \brief TCC2 Base Address */
 #define TSENS_BASE_ADDRESS               _UL_(0x40003000)                              /**< \brief TSENS Base Address */
 #define WDT_BASE_ADDRESS                 _UL_(0x40002000)                              /**< \brief WDT Base Address */
-/** @}  end of Peripheral Base Address Definitions */
+/** @}  b'end of Peripheral Base Address Definitions' */
 
-/** \addtogroup PIC32CM1216MC00048_pio Peripheral Pio Definitions
+/** \addtogroup PIC32CM1216MC00048_pio b'Peripheral Pio Definitions'
  *  @{
  */
 
@@ -445,7 +431,7 @@ void PDEC_Handler                  ( void );
 /*   PIO DEFINITIONS FOR PIC32CM1216MC00048                                   */
 /* ************************************************************************** */
 #include "pio/pic32cm1216mc00048.h"
-/** @}  end of Peripheral Pio Definitions */
+/** @}  b'end of Peripheral Pio Definitions' */
 
 /* ************************************************************************** */
 /*   MEMORY MAPPING DEFINITIONS FOR PIC32CM1216MC00048                        */
@@ -642,7 +628,7 @@ void PDEC_Handler                  ( void );
 }
 #endif
 
-/** @}  end of PIC32CM1216MC00048 definitions */
+/** @}  b'end of PIC32CM1216MC00048 definitions' */
 
 
 #endif /* _PIC32CM1216MC00048_H_ */
