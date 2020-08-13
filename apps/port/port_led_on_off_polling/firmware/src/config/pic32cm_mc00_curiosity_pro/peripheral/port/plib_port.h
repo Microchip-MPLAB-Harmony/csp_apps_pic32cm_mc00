@@ -65,27 +65,23 @@
 // *****************************************************************************
 // *****************************************************************************
 
-  
 /*** Macros for LED pin ***/
 #define LED_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 24)
 #define LED_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 24)
 #define LED_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 24)
-#define LED_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 24)) & 0x01)
 #define LED_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 24)
 #define LED_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 24)
+#define LED_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 24)) & 0x01)
 #define LED_PIN                  PORT_PIN_PA24
 
 /*** Macros for SWITCH pin ***/
 #define SWITCH_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 25)
 #define SWITCH_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 25)
 #define SWITCH_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 25)
-#define SWITCH_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 25)) & 0x01)
 #define SWITCH_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 25)
 #define SWITCH_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 25)
+#define SWITCH_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 25)) & 0x01)
 #define SWITCH_PIN                  PORT_PIN_PA25
-
-
-
 // *****************************************************************************
 /* PORT Group
 
@@ -853,7 +849,7 @@ void PORT_GroupToggle(PORT_GROUP group, uint32_t mask);
     void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as input.
+    Configures the selected IO pins of a group as input.
 
   Description:
     This function configures the selected IO pins of a group as input. The pins
@@ -892,7 +888,7 @@ void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask);
     void PORT_GroupOutputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as output.
+    Configures the selected IO pins of a group as output.
 
   Description:
     This function configures the selected IO pins of a group as output. The pins
