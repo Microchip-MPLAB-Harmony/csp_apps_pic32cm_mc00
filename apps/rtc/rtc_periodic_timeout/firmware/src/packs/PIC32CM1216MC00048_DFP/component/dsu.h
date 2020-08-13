@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2020-05-07T15:34:18Z */
+/* file generated from device description version 2020-08-03T13:06:13Z */
 #ifndef _PIC32CMMC00_DSU_COMPONENT_H_
 #define _PIC32CMMC00_DSU_COMPONENT_H_
 
@@ -37,10 +37,19 @@
 #define DSU_CTRL_CRC_Pos                      _U_(2)                                               /**< (DSU_CTRL) 32-bit Cyclic Redundancy Code Position */
 #define DSU_CTRL_CRC_Msk                      (_U_(0x1) << DSU_CTRL_CRC_Pos)                       /**< (DSU_CTRL) 32-bit Cyclic Redundancy Code Mask */
 #define DSU_CTRL_CRC(value)                   (DSU_CTRL_CRC_Msk & ((value) << DSU_CTRL_CRC_Pos))  
+#define DSU_CTRL_MBIST_Pos                    _U_(3)                                               /**< (DSU_CTRL) Memory built-in self-test Position */
+#define DSU_CTRL_MBIST_Msk                    (_U_(0x1) << DSU_CTRL_MBIST_Pos)                     /**< (DSU_CTRL) Memory built-in self-test Mask */
+#define DSU_CTRL_MBIST(value)                 (DSU_CTRL_MBIST_Msk & ((value) << DSU_CTRL_MBIST_Pos))
 #define DSU_CTRL_CE_Pos                       _U_(4)                                               /**< (DSU_CTRL) Chip-Erase Position */
 #define DSU_CTRL_CE_Msk                       (_U_(0x1) << DSU_CTRL_CE_Pos)                        /**< (DSU_CTRL) Chip-Erase Mask */
 #define DSU_CTRL_CE(value)                    (DSU_CTRL_CE_Msk & ((value) << DSU_CTRL_CE_Pos))    
-#define DSU_CTRL_Msk                          _U_(0x15)                                            /**< (DSU_CTRL) Register Mask  */
+#define DSU_CTRL_ARR_Pos                      _U_(6)                                               /**< (DSU_CTRL) Auxiliary Row Read Position */
+#define DSU_CTRL_ARR_Msk                      (_U_(0x1) << DSU_CTRL_ARR_Pos)                       /**< (DSU_CTRL) Auxiliary Row Read Mask */
+#define DSU_CTRL_ARR(value)                   (DSU_CTRL_ARR_Msk & ((value) << DSU_CTRL_ARR_Pos))  
+#define DSU_CTRL_SMSA_Pos                     _U_(7)                                               /**< (DSU_CTRL) Start Memory Stream Access Position */
+#define DSU_CTRL_SMSA_Msk                     (_U_(0x1) << DSU_CTRL_SMSA_Pos)                      /**< (DSU_CTRL) Start Memory Stream Access Mask */
+#define DSU_CTRL_SMSA(value)                  (DSU_CTRL_SMSA_Msk & ((value) << DSU_CTRL_SMSA_Pos))
+#define DSU_CTRL_Msk                          _U_(0xDD)                                            /**< (DSU_CTRL) Register Mask  */
 
 
 /* -------- DSU_STATUSA : (DSU Offset: 0x01) (R/W 8) Status A -------- */
@@ -90,6 +99,15 @@
 #define DSU_STATUSB_DCCD_Pos                  _U_(2)                                               /**< (DSU_STATUSB Position) Debug Communication Channel x Dirty */
 #define DSU_STATUSB_DCCD_Msk                  (_U_(0x3) << DSU_STATUSB_DCCD_Pos)                   /**< (DSU_STATUSB Mask) DCCD */
 #define DSU_STATUSB_DCCD(value)               (DSU_STATUSB_DCCD_Msk & ((value) << DSU_STATUSB_DCCD_Pos)) 
+
+/* -------- DSU_STATUSC : (DSU Offset: 0x03) ( R/ 8) Status C -------- */
+#define DSU_STATUSC_RESETVALUE                _U_(0x00)                                            /**<  (DSU_STATUSC) Status C  Reset Value */
+
+#define DSU_STATUSC_STATE_Pos                 _U_(0)                                               /**< (DSU_STATUSC) State Position */
+#define DSU_STATUSC_STATE_Msk                 (_U_(0x7) << DSU_STATUSC_STATE_Pos)                  /**< (DSU_STATUSC) State Mask */
+#define DSU_STATUSC_STATE(value)              (DSU_STATUSC_STATE_Msk & ((value) << DSU_STATUSC_STATE_Pos))
+#define DSU_STATUSC_Msk                       _U_(0x07)                                            /**< (DSU_STATUSC) Register Mask  */
+
 
 /* -------- DSU_ADDR : (DSU Offset: 0x04) (R/W 32) Address -------- */
 #define DSU_ADDR_RESETVALUE                   _U_(0x00)                                            /**<  (DSU_ADDR) Address  Reset Value */
@@ -166,6 +184,15 @@
 #define DSU_DID_Msk                           _U_(0xFFBFFFFF)                                      /**< (DSU_DID) Register Mask  */
 
 
+/* -------- DSU_DCFG : (DSU Offset: 0xF0) (R/W 32) Device Configuration -------- */
+#define DSU_DCFG_RESETVALUE                   _U_(0x00)                                            /**<  (DSU_DCFG) Device Configuration  Reset Value */
+
+#define DSU_DCFG_DCFG_Pos                     _U_(0)                                               /**< (DSU_DCFG) Device Configuration Position */
+#define DSU_DCFG_DCFG_Msk                     (_U_(0xFFFFFFFF) << DSU_DCFG_DCFG_Pos)               /**< (DSU_DCFG) Device Configuration Mask */
+#define DSU_DCFG_DCFG(value)                  (DSU_DCFG_DCFG_Msk & ((value) << DSU_DCFG_DCFG_Pos))
+#define DSU_DCFG_Msk                          _U_(0xFFFFFFFF)                                      /**< (DSU_DCFG) Register Mask  */
+
+
 /* -------- DSU_ENTRY0 : (DSU Offset: 0x1000) ( R/ 32) CoreSight ROM Table Entry 0 -------- */
 #define DSU_ENTRY0_RESETVALUE                 _U_(0x9F0FC002)                                      /**<  (DSU_ENTRY0) CoreSight ROM Table Entry 0  Reset Value */
 
@@ -182,7 +209,7 @@
 
 
 /* -------- DSU_ENTRY1 : (DSU Offset: 0x1004) ( R/ 32) CoreSight ROM Table Entry 1 -------- */
-#define DSU_ENTRY1_RESETVALUE                 _U_(0x00)                                            /**<  (DSU_ENTRY1) CoreSight ROM Table Entry 1  Reset Value */
+#define DSU_ENTRY1_RESETVALUE                 _U_(0x5002)                                          /**<  (DSU_ENTRY1) CoreSight ROM Table Entry 1  Reset Value */
 
 #define DSU_ENTRY1_Msk                        _U_(0x00000000)                                      /**< (DSU_ENTRY1) Register Mask  */
 
@@ -326,11 +353,13 @@
 #define DSU_CTRL_REG_OFST              (0x00)              /**< (DSU_CTRL) Control Offset */
 #define DSU_STATUSA_REG_OFST           (0x01)              /**< (DSU_STATUSA) Status A Offset */
 #define DSU_STATUSB_REG_OFST           (0x02)              /**< (DSU_STATUSB) Status B Offset */
+#define DSU_STATUSC_REG_OFST           (0x03)              /**< (DSU_STATUSC) Status C Offset */
 #define DSU_ADDR_REG_OFST              (0x04)              /**< (DSU_ADDR) Address Offset */
 #define DSU_LENGTH_REG_OFST            (0x08)              /**< (DSU_LENGTH) Length Offset */
 #define DSU_DATA_REG_OFST              (0x0C)              /**< (DSU_DATA) Data Offset */
 #define DSU_DCC_REG_OFST               (0x10)              /**< (DSU_DCC) Debug Communication Channel n Offset */
 #define DSU_DID_REG_OFST               (0x18)              /**< (DSU_DID) Device Identification Offset */
+#define DSU_DCFG_REG_OFST              (0xF0)              /**< (DSU_DCFG) Device Configuration Offset */
 #define DSU_ENTRY0_REG_OFST            (0x1000)            /**< (DSU_ENTRY0) CoreSight ROM Table Entry 0 Offset */
 #define DSU_ENTRY1_REG_OFST            (0x1004)            /**< (DSU_ENTRY1) CoreSight ROM Table Entry 1 Offset */
 #define DSU_END_REG_OFST               (0x1008)            /**< (DSU_END) CoreSight ROM Table End Offset */
@@ -355,13 +384,15 @@ typedef struct
   __O   uint8_t                        DSU_CTRL;           /**< Offset: 0x00 ( /W  8) Control */
   __IO  uint8_t                        DSU_STATUSA;        /**< Offset: 0x01 (R/W  8) Status A */
   __I   uint8_t                        DSU_STATUSB;        /**< Offset: 0x02 (R/   8) Status B */
-  __I   uint8_t                        Reserved1[0x01];
+  __I   uint8_t                        DSU_STATUSC;        /**< Offset: 0x03 (R/   8) Status C */
   __IO  uint32_t                       DSU_ADDR;           /**< Offset: 0x04 (R/W  32) Address */
   __IO  uint32_t                       DSU_LENGTH;         /**< Offset: 0x08 (R/W  32) Length */
   __IO  uint32_t                       DSU_DATA;           /**< Offset: 0x0C (R/W  32) Data */
   __IO  uint32_t                       DSU_DCC[2];         /**< Offset: 0x10 (R/W  32) Debug Communication Channel n */
   __I   uint32_t                       DSU_DID;            /**< Offset: 0x18 (R/   32) Device Identification */
-  __I   uint8_t                        Reserved2[0xFE4];
+  __I   uint8_t                        Reserved1[0xD4];
+  __IO  uint32_t                       DSU_DCFG[2];        /**< Offset: 0xF0 (R/W  32) Device Configuration */
+  __I   uint8_t                        Reserved2[0xF08];
   __I   uint32_t                       DSU_ENTRY0;         /**< Offset: 0x1000 (R/   32) CoreSight ROM Table Entry 0 */
   __I   uint32_t                       DSU_ENTRY1;         /**< Offset: 0x1004 (R/   32) CoreSight ROM Table Entry 1 */
   __I   uint32_t                       DSU_END;            /**< Offset: 0x1008 (R/   32) CoreSight ROM Table End */
