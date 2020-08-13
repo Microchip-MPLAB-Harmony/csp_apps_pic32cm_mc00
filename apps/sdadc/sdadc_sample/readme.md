@@ -67,3 +67,7 @@ Refer to the table below for details of the switch used:
 | Board | Switch |
 |:------|:------:|
 | [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) | SW0 |
+
+6. Console displays the SDADC count and the SDADC input voltage in the console as shown below:
+
+    ![output](images/output_sdadc_sample.png)
