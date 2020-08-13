@@ -64,5 +64,5 @@ Below table shows the AC input pin and LED name for the board
 
 | Board| AC input pin | LED name|
 |------|----------|---------|
-| [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) | pin 3 of the ‘VREF connector’ (6-pin) | LED0 |
+| [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) | pin 2 (A2) of the J803 header) | LED0 |
 |||
