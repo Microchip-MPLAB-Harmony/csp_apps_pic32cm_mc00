@@ -20,7 +20,7 @@
  *
  */
 
-/* file generated from device description version 2020-05-07T15:34:18Z */
+/* file generated from device description version 2020-08-03T13:06:13Z */
 #ifndef _PIC32CMMC00_OSC32KCTRL_COMPONENT_H_
 #define _PIC32CMMC00_OSC32KCTRL_COMPONENT_H_
 
