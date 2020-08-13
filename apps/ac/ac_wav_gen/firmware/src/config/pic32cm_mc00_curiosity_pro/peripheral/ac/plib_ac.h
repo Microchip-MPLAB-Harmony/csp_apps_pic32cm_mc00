@@ -67,6 +67,28 @@ typedef enum
     AC_CHANNEL1 = 1,
 }AC_CHANNEL;
 
+typedef enum
+{
+    AC_POSINPUT_AIN0 = AC_COMPCTRL_MUXPOS_AIN0,
+    AC_POSINPUT_AIN1 = AC_COMPCTRL_MUXPOS_AIN1,
+    AC_POSINPUT_AIN2 = AC_COMPCTRL_MUXPOS_AIN2,
+    AC_POSINPUT_AIN3 = AC_COMPCTRL_MUXPOS_AIN3,
+    AC_POSINPUT_VSCALE = AC_COMPCTRL_MUXPOS_VSCALE,
+}AC_POSINPUT;
+
+
+typedef enum
+{
+    AC_NEGINPUT_AIN0 = AC_COMPCTRL_MUXNEG_AIN0,
+    AC_NEGINPUT_AIN1 = AC_COMPCTRL_MUXNEG_AIN1,
+    AC_NEGINPUT_AIN2 = AC_COMPCTRL_MUXNEG_AIN2,
+    AC_NEGINPUT_AIN3 = AC_COMPCTRL_MUXNEG_AIN3,
+    AC_NEGINPUT_GND = AC_COMPCTRL_MUXNEG_GND,
+    AC_NEGINPUT_VSCALE = AC_COMPCTRL_MUXNEG_VSCALE,
+    AC_NEGINPUT_INTREF = AC_COMPCTRL_MUXNEG_INTREF,
+    AC_NEGINPUT_DAC = AC_COMPCTRL_MUXNEG_DAC,
+}AC_NEGINPUT;
+
 typedef void (*AC_CALLBACK) (uint8_t int_flags, uintptr_t context);
 
 typedef struct
@@ -94,6 +116,8 @@ bool AC_StatusGet (AC_CHANNEL channel);
 void AC_CallbackRegister (AC_CALLBACK callback, uintptr_t context);
 
 void AC_SetVddScalar( AC_CHANNEL channel_id , uint8_t vdd_scalar);
+
+void AC_ChannelSelect( AC_CHANNEL channel_id , AC_POSINPUT positiveInput, AC_NEGINPUT negativeInput);
 
 #ifdef __cplusplus // Provide C++ Compatibility
 }
