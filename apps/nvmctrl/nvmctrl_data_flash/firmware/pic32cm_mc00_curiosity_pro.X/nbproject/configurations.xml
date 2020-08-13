@@ -37,6 +37,7 @@
           <itemPath>../src/config/pic32cm_mc00_curiosity_pro/device_cache.h</itemPath>
           <itemPath>../src/config/pic32cm_mc00_curiosity_pro/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/pic32cm_mc00_curiosity_pro/definitions.h</itemPath>
+          <itemPath>../src/config/pic32cm_mc00_curiosity_pro/device.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
@@ -53,6 +54,7 @@
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm0plus.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -95,10 +97,16 @@
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/PIC32CM1216MC00048_DFP/pio/pic32cm1216mc00048.h</itemPath>
           </logicalFolder>
-          <itemPath>../src/packs/PIC32CM1216MC00048_DFP/device.h</itemPath>
           <itemPath>../src/packs/PIC32CM1216MC00048_DFP/pic32cm1216mc00048.h</itemPath>
         </logicalFolder>
       </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="true">
+      <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/pic32cm_mc00_curiosity_pro/harmony.prj</itemPath>
+      <itemPath>../../../../../../mhc/../csp_apps_pic32cm_mc00/apps/nvmctrl/nvmctrl_data_flash/firmware/src/config/pic32cm_mc00_curiosity_pro/pic32cm_mc00_curiosity_pro.xml</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -148,12 +156,6 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
     </logicalFolder>
-    <logicalFolder name="ExternalFiles"
-                   displayName="Important Files"
-                   projectFiles="false">
-      <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/pic32cm_mc00_curiosity_pro/harmony.prj</itemPath>
-    </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
@@ -168,12 +170,12 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.40</languageToolchainVersion>
+        <languageToolchainVersion>2.41</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
+        <pack name="PIC32CM-MC_DFP" vendor="Microchip" version="1.0.32"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="PIC32CM-MC_DFP" vendor="Microchip" version="1.0.15"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -329,7 +331,8 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories"
+                  value="../src;../src/config/pic32cm_mc00_curiosity_pro;../src/packs/PIC32CM1216MC00048_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
