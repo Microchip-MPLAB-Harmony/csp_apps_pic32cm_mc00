@@ -96,7 +96,7 @@ void EIC_Initialize (void)
                               EIC_CONFIG1_SENSE10_NONE  |
                               EIC_CONFIG1_SENSE11_NONE  |
                               EIC_CONFIG1_SENSE12_NONE  |
-                              EIC_CONFIG1_SENSE13_RISE  |
+                              EIC_CONFIG1_SENSE13_RISE | EIC_CONFIG1_FILTEN13_Msk |
                               EIC_CONFIG1_SENSE14_NONE  |
                               EIC_CONFIG1_SENSE15_NONE ;
 
