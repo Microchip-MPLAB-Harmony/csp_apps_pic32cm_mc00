@@ -4,7 +4,6 @@ nav_order: 1
 has_children: true
 has_toc: false
 ---
-
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # Harmony 3 peripheral library application examples for PIC32CM MC00 family
@@ -29,15 +28,15 @@ This content can also be downloaded using content manager by following these [in
 
 | Folder     | Description                             |
 | ---        | ---                                     |
-| apps       | Peripheral library example applications |
-| docs       | Applications help documentation         |
+| apps       | Contains peripheral library example applications |
+| docs       | Contains documentation in html format for offline viewing (to be used only after cloning this repository onto a local machine). Use [github pages](https://microchip-mplab-harmony.github.io/csp_apps_pic32cm_mc00/) of this repository for viewing it online. |
 
 ## Code Examples
 
 The following applications are provided to demonstrate the typical or interesting usage models of one or more peripheral libraries.
 
-| Name | Description|
-|:---------|:-----------|
+| Name | Description |
+| ---- | ----------- |
 | [AC Sleepwalking](apps/ac/ac_sleepwalk_singleshot/readme.md) | This example application shows how to use the AC Peripheral library to perform a single shot comparison in standby sleep mode periodically and wake up the device at the end of a successful comparison |
 | [AC PWM generation](apps/ac/ac_wav_gen/readme.md) | This example application shows how to use the Analog Comparator Peripheral library to generate a 1KHz PWM waveform |
 | [ADC DMA sleepwalking](apps/adc/adc_dmac_sleepwalking/readme.md) | This application shows how to configure the ADC in a sleepwalking operation, where the input voltage is measured at a fixed interval, and then the device is woken from sleep after conversion of 16 samples |
@@ -47,7 +46,7 @@ The following applications are provided to demonstrate the typical or interestin
 | [Clock configuration](apps/clock/clock_config/readme.md) | This example application shows how to configure the clock system to run the device at maximum frequency. It also outputs a prescaled clock signal on a GPIO pin for measurement and verification |
 | [DAC waveform generation](apps/dac/dac_wav_gen/readme.md) | This example application shows how to use the DAC to generate a 1 KHz Sine or Sawtooth wave with a lookup table |
 | [DAC waveform generation with DMA](apps/dac/dac_wav_gen_dma/readme.md) | This example application shows how to use the DAC with the DMA to generate a 5 KHz sinusoidal waveform without CPU intervention |
-| [DIVAS accelerate computations](apps/divas/divas_accelerate_computations/readme.md) | This example application demonstrates how to use the DIVAS accelerator to compute square room, and perform a division and modulus operation |
+| [DIVAS accelerate computations](apps/divas/divas_accelerate_computations/readme.md) | This example application demonstrates how to use the DIVAS accelerator to compute square root, and perform a division and modulus operation |
 | [DIVAS override C division operator](apps/divas/divas_c_operator_override/readme.md) | This example application demonstrates how to override C division operator and modulus operator to use the DIVAS accelerator |
 | [DMAC memory transfer](apps/dmac/dmac_memory_transfer/readme.md) | This example application demonstrates how to use the DMAC peripheral to do a memory to memory transfer |
 | [DMAC USART echo](apps/dmac/dmac_usart_echo/readme.md) | This example application demonstrates USART transfer with DMA to receive 10 bytes and echo back the received bytes |
@@ -75,7 +74,6 @@ The following applications are provided to demonstrate the typical or interestin
 | [TC timer mode](apps/tc/tc_timer_mode/readme.md) | This example shows how to use the TC module in timer mode to generate periodic interrupt |
 | [TCC PWM generation](apps/tcc/tcc_synchronous_pwm_channels/readme.md) | This example application shows how to use the TCC to generate a 2 or 3 phase PWM signals for motor control with dead time |
 | [WDT timeout](apps/wdt/wdt_timeout/readme.md) | This example shows how to generate a Watchdog timer reset by emulating a deadlock |
-|||
 
 ____
 

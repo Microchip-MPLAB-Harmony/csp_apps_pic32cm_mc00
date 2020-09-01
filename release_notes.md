@@ -8,16 +8,15 @@ nav_order: 99
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
-## Harmony 3 peripheral library application examples for PIC32CM MC00 family v3.0.0
+## Harmony 3 peripheral library application examples for PIC32CM MC00 family  v3.0.0
 
 ### Development kit and demo application support
 
 Following table provides number of peripheral library examples available for different development kits.
 
-| Development Kits                                                                                 | Number of applications |
-| -------------------------------------------------------------------------------------------------| --- |
-| [PIC32CM MC00 Curiosity Pro Evaluation Kit]()                                                    | 37  | 
-|||
+| Development Kits  | MPLABx applications |
+|:-----------------:|:-------------------:|
+| [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) | 37 |
 
 ### New Features
 
@@ -25,16 +24,17 @@ New features added in this release are as follows:
 
 - Applications migrated from csp repository to this new application repository for PIC32CM MC00 development boards
 
-    
+
 ### Known Issues
 
 The current known issues are as follows:
 
-- None
+- The following product family requires newer DFP version to be downloaded from packs server and to be used in the MPLAB project to build with MPLAB X IDE v5.4.
+  - **PIC32CM MC00 Family**: PIC32CM-MC_DFP v1.0.32
 
 ### Development Tools
 
 - [MPLAB® X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide)
-- [MPLAB® XC32 C/C++ Compiler v2.41](https://www.microchip.com/mplab/compilers)
 - MPLAB® X IDE plug-ins:
   - MPLAB® Harmony Configurator (MHC) v3.6.0
+- [MPLAB® XC32 C/C++ Compiler v2.41](https://www.microchip.com/mplab/compilers)
