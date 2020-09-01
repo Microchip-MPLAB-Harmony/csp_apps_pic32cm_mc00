@@ -9,7 +9,7 @@ has_toc: false
 
 # DIVAS accelerate computations
 
-This example application demonstrates how to use the DIVAS accelerator to compute square room, and perform a division and modulus operation.
+This example application demonstrates how to use the DIVAS accelerator to compute square root, and perform a division and modulus operation.
 
 ## Description
 
