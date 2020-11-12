@@ -1,0 +1,73 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.csp_apps_pic32cm_mc00_clock_config",
+		"version": "3.0.1",
+		"displayName": "Clock configuration Example for PIC32CM MC Family",
+		"projectName": "clock_config_pic32cm_mc00_curiosity_pro",
+		"shortDescription": "This example application shows how to configure the clock system to run the device at maximum frequency. It also outputs a prescaled clock signal on a GPIO pin for measurement and verification.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.40.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.40.0"
+			}
+		],
+		"dfp": {
+			"name": "CMSIS",
+			"semverRange": "^5.4.0"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.5.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32CM1216MC00048",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "PIC32CM MC00 Curiosity Pro Evaluation Kit"
+			],
+			[
+				"Harmony", "Peripherals", "CLOCK"
+			],
+			[
+				"Peripherals", "CLOCK"
+			]
+		],
+		"peripherals": [
+			"CLOCK"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"PIC32CM1216MC00048",
+			"PIC32CM MC Family",
+			"Clock"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
