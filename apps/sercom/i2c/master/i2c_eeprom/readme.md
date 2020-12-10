@@ -26,7 +26,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| pic32cm_mc00_curiosity_pro.X | MPLABX project for [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) |
+| pic32cm_mc00_curiosity_pro.X | MPLABX project for [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A) |
 |||
 
 ## Setting up the hardware
@@ -35,13 +35,13 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| pic32cm_mc00_curiosity_pro.X | [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/)
+| pic32cm_mc00_curiosity_pro.X | [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A)
 |||
 
-### Setting up [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/)
+### Setting up [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A)
 
-- Connect [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) to EXT1 header
-- Plug the [EEPROM 3 click Board](https://www.mikroe.com/eeprom-3-click) into the MikroBus socket of the [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
+- Connect [mikroBUS Xplained Pro board](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46AATMBUSADAPTER-XPRO) to EXT1 header
+- Plug the [EEPROM 3 click Board](https://www.mikroe.com/eeprom-3-click) into the MikroBus socket of the [mikroBUS Xplained Pro board](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46AATMBUSADAPTER-XPRO)
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ## Running the Application
@@ -55,5 +55,5 @@ The following table provides the LED name:
 
 | Board      | LED Name |
 | ---------- | ---------------- |
-| [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) | LED0 |
+| [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A) | LED0 |
 |||

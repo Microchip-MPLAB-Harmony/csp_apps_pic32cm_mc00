@@ -39,7 +39,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| pic32cm_mc00_curiosity_pro.X | MPLABX project for [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) |
+| pic32cm_mc00_curiosity_pro.X | MPLABX project for [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A) |
 |||
 
 ## Setting up the hardware
@@ -48,12 +48,12 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| pic32cm_mc00_curiosity_pro.X | [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/)
+| pic32cm_mc00_curiosity_pro.X | [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A)
 |||
 
 Hardware setup requires two boards, one acting as the I2C Master and the other as the I2C slave. *Note: The I2C master demo - i2c_eeprom on the SAM E54 Xplained Pro uses the on-board EEPROM and hence cannot be used as is with this I2C slave application*
 
-### Setting up [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/)
+### Setting up [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A)
 
 - On EXT1 header, connect I2C SDA line on Pin 11 (PA12) and I2C SCL line on Pin 12 (PA13) with the corresponding SDA and SCL lines of the I2C master
 - Connect a ground wire from Pin 2 of EXT1 to the ground of the I2C master

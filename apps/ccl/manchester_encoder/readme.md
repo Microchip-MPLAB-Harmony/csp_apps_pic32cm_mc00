@@ -26,7 +26,7 @@ To build the application, refer to the following table and open the project usin
 
 | Project Name      | Description                                    |
 | ----------------- | ---------------------------------------------- |
-| pic32cm_mc00_curiosity_pro.X | MPLABX project for [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) |
+| pic32cm_mc00_curiosity_pro.X | MPLABX project for [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A) |
 |||
 
 ## Setting up the hardware
@@ -35,10 +35,10 @@ The following table shows the target hardware for the application projects.
 
 | Project Name| Board|
 |:---------|:---------:|
-| pic32cm_mc00_curiosity_pro.X | [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) |
+| pic32cm_mc00_curiosity_pro.X | [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A) |
 |||
 
-### Setting up [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/)
+### Setting up [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A)
 
 - Use jumper from PA17 (EXT1 pin 15) to PA09 (EXT2 pin 4). This routes SCK signal to CCL_IN[4]
 - Use jumper from PA16 (EXT2 pin 17) to PA10 (EXT2 pin 5). This routes MOSI signal to CCL_IN[5]
@@ -54,7 +54,7 @@ The following table shows the target hardware for the application projects.
 
     |Board| MOSI pin | SCK pin  | CCL_OUT pin |
     |-----|----------|----------|-------------|
-    | [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/) | PA16 (EXT2 pin 17) | PA17 (EXT1 pin 15) | PA11 (EXT2 pin 6) |
+    | [PIC32CM MC00 Curiosity Pro Evaluation Kit](https://www.microchip.com/Developmenttools/ProductDetails/EV15N46A) | PA16 (EXT2 pin 17) | PA17 (EXT1 pin 15) | PA11 (EXT2 pin 6) |
     ||||
 
 5. Build and Program the application using its IDE
