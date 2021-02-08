@@ -76,13 +76,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: A6F7C4FAD03E10DB7E76CE09238C7C39
-- generatedChecksum: FC41BCDD257A44AF214290160D32096E
+- generatedChecksum: F7D4BA66645B382C6AC7EC0B8D4E9BFC
   logicalPath: config\pic32cm_mc00_curiosity_pro\peripheral\sercom\usart
   name: plib_sercom0_usart.c
   physicalPath: peripheral\sercom\usart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FC41BCDD257A44AF214290160D32096E
+  userChecksum: F7D4BA66645B382C6AC7EC0B8D4E9BFC
 - generatedChecksum: B8E7D9ADF1C4AEA2903AB12F0E5F9C64
   logicalPath: config\pic32cm_mc00_curiosity_pro\peripheral\systick
   name: plib_systick.c
