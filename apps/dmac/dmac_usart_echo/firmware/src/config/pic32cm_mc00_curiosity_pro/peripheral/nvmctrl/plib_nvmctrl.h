@@ -63,12 +63,10 @@
 // DOM-IGNORE-END
 
 #define NVMCTRL_FLASH_START_ADDRESS        (0x00000000U)
-#define NVMCTRL_FLASH_SIZE                 (0x20000U)
 #define NVMCTRL_FLASH_PAGESIZE             (64U)
 #define NVMCTRL_FLASH_ROWSIZE              (256U)
 
 #define NVMCTRL_DATAFLASH_START_ADDRESS    (0x00400000U)
-#define NVMCTRL_DATAFLASH_SIZE             (0x1000U)
 #define NVMCTRL_DATAFLASH_PAGESIZE         (64U)
 #define NVMCTRL_DATAFLASH_ROWSIZE          (256U)
 
@@ -112,6 +110,10 @@ void NVMCTRL_RegionLock (uint32_t address);
 
 void NVMCTRL_RegionUnlock (uint32_t address);
 
+
+bool NVMCTRL_PageBufferWrite( uint32_t *data, const uint32_t address);
+
+bool NVMCTRL_PageBufferCommit( const uint32_t address);
 
 void NVMCTRL_CacheInvalidate ( void );
 

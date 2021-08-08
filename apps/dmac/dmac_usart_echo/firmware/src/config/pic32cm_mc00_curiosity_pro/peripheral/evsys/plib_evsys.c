@@ -39,6 +39,7 @@
 *******************************************************************************/
 
 #include "plib_evsys.h"
+#include "interrupts.h"
 
 
 void EVSYS_Initialize( void )
@@ -46,5 +47,6 @@ void EVSYS_Initialize( void )
 
 
 }
+
 
 
